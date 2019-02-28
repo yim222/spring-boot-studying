@@ -1,0 +1,36 @@
+OPEN MYSQL :
+
+>cmd
+--Start Server
+
+>cd\izhar\heavy files\programs\development\mysql\bin
+>mysqld --console
+
+--enter to the DB :
+
+--Other 
+>CMD
+>™
+mysql mysql -u lingar222 –p
+>mysql -u root –p  OR mysql -u lingar222 –p
+--password:
+>12345678
+
+--enter:
+mysql -u root/userName -p
+
+--change root/user password
+alter user 'root'@'localhost' identified by ‘newPassword’;
+
+-- create another user: 
+<create user 'userName'@'localhost' identified by ‘password’;
+
+--open permissions:
+<grant all on *.* to 'myuser'@'localhost';
+
+--shut-down:
+mysqladmin shutdown
+
+--------------------------------------------------------
+
+

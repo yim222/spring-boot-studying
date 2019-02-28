@@ -1,0 +1,18 @@
+This is the source of the studying. 
+https://docs.spring.io/spring-data/commons/docs/current/api/org/springframework/data/repository/Repository.html
+It’s interface, always need to be implemented by some object. 
+SO the basic is CrudRepository<T,ID>, 
+and in the tutorial it’s work with . PagingAndSortingRepository<T,ID>
+Let’s do some little playing with that. 
+
+The repository generate automatically a table with the object properties. 
+
+It's pretty cool. Yeah.
+
+Look here some cools method that u have available. 
+And I think that paging is extends this too , SO all available too. 
+
+Crud and paging are also interface. U need to implement them, and make the methods specified in them .
+But in fact we just extends this inteface too, and use it in the spring. 
+The difference between paging to the regular CRUD interface, that in the paging u can ask the page size by ?size=3 for example. 
+http://localhost:8080/api/socialEvents?size=2
