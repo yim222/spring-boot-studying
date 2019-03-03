@@ -12,7 +12,7 @@ export class ChessSquare extends React.Component{
   constructor(props){
     super();
     this.state = {
-      chessSquares : []
+      chessSquare2s : []
     }
 
   }
@@ -31,6 +31,7 @@ export class ChessSquare extends React.Component{
     });
     */
 	  this.loadFromServer(5);
+	  console.log(this.state.chessSquare2s, "this.state.chessSquare2s" );
 	}
 //tag::follow-2[]
 	loadFromServer(pageSize) {

@@ -34891,7 +34891,7 @@ function (_React$Component) {
       return React.createElement("div", null, React.createElement("h1", null), React.createElement(CreateDialog, {
         attributes: this.state.attributes,
         onCreate: this.onCreate
-      }), React.createElement("h2", null, "VVV - try_6 "), React.createElement(SocialEventList, {
+      }), React.createElement("h2", null, "VVV - try_6"), React.createElement(SocialEventList, {
         socialEvents: this.state.socialEvents,
         links: this.state.links,
         pageSize: this.state.pageSize,
@@ -35253,7 +35253,7 @@ function (_React$Component) {
 
     _this = _possibleConstructorReturn(this, _getPrototypeOf(ChessSquare).call(this));
     _this.state = {
-      chessSquares: []
+      chessSquare2s: []
     };
     return _this;
   }
@@ -35275,6 +35275,7 @@ function (_React$Component) {
        });
        */
       this.loadFromServer(5);
+      console.log(this.state.chessSquare2s, "this.state.chessSquare2s");
     } //tag::follow-2[]
 
   }, {
