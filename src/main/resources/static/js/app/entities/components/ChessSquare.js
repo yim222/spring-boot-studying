@@ -2,6 +2,7 @@ import React from 'react'
 //import {loadFromServer} from '../services/GetData'
 import client from '../../../client'
 import follow from '../../../follow' 
+const when = require('when');
 
 const root = '/api';
 

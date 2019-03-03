@@ -34891,7 +34891,7 @@ function (_React$Component) {
       return React.createElement("div", null, React.createElement("h1", null), React.createElement(CreateDialog, {
         attributes: this.state.attributes,
         onCreate: this.onCreate
-      }), React.createElement("h2", null, "VVV - try3"), React.createElement(SocialEventList, {
+      }), React.createElement("h2", null, "VVV - try4"), React.createElement(SocialEventList, {
         socialEvents: this.state.socialEvents,
         links: this.state.links,
         pageSize: this.state.pageSize,
@@ -35236,6 +35236,9 @@ function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || func
  //import {loadFromServer} from '../services/GetData'
 
 
+
+
+var when = __webpack_require__(/*! when */ "./node_modules/when/when.js");
 
 var root = '/api';
 var ChessSquare =
