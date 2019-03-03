@@ -152,13 +152,13 @@ class App extends React.Component {
 		this.loadFromServer(this.state.pageSize);
 	}
 	// end::follow-1[]
-
+ 
 	render() {
 		return (
 			<div>
 			<h1></h1>
 				<CreateDialog attributes={this.state.attributes} onCreate={this.onCreate}/>
-				<h2>VVV - try2</h2> 
+				<h2>VVV - try3</h2> 
 				<SocialEventList socialEvents={this.state.socialEvents}
 							  links={this.state.links}
 							  pageSize={this.state.pageSize}

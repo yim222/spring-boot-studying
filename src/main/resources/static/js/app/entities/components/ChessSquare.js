@@ -3,6 +3,9 @@ import React from 'react'
 import client from '../../../client'
 import follow from '../../../follow' 
 
+const root = '/api';
+
+
 export class ChessSquare extends React.Component{
 
   constructor(props){
