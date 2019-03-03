@@ -149,15 +149,16 @@ class App extends React.Component {
 
 	// tag::follow-1[]
 	componentDidMount() {
-		this.loadFromServer(this.state.pageSize); 
+		this.loadFromServer(this.state.pageSize);
 	}
 	// end::follow-1[]
 
 	render() {
 		return (
 			<div>
+			more changes...and more ? and fdsf
 				<CreateDialog attributes={this.state.attributes} onCreate={this.onCreate}/>
-				<h2>VVVAAABBBCCCdddd ggggxvvvbbxcvxHHHH fffABCD</h2>
+				<h2>VVV</h2>
 				<SocialEventList socialEvents={this.state.socialEvents}
 							  links={this.state.links}
 							  pageSize={this.state.pageSize}
@@ -166,14 +167,15 @@ class App extends React.Component {
 							  onUpdate={this.onUpdate}
 							  onDelete={this.onDelete}
 							  updatePageSize={this.updatePageSize}/>
-								<Router>
-									<div>
-										<MainRouter/>
-										<div className = "mainArea1">
-											<MainMenu/>
-										</div>
-									</div>
-								</Router>
+				{/* my routing */}
+				<Router>
+					<div>
+						<MainRouter/>
+						<div className = "mainArea1">
+							<MainMenu/>
+						</div>
+					</div>
+				</Router>
 
 			</div>
 		)
@@ -348,6 +350,7 @@ class SocialEventList extends React.Component {
 
 		return (
 			<div>
+
 				<input ref="pageSize" defaultValue={this.props.pageSize} onInput={this.handleInput}/>
 				<table>
 					<tbody>

@@ -1,5 +1,5 @@
 import React from 'react'
-
+import {ChessSquare} from '../entities/components/ChessSquare'
 export class Screen1 extends React.Component{
 
 
@@ -7,7 +7,9 @@ export class Screen1 extends React.Component{
 
     return(
       <div>
-        <h3>Hello I am Screen1</h3>
+        <h3>Hello I am Screen1 + 2222</h3>
+        <p>Some words + sss</p>
+        <ChessSquare/>
 
       </div>
     )

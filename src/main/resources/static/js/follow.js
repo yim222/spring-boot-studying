@@ -25,6 +25,10 @@ module.exports = function follow(api, rootPath, relArray) {
 					path: response.entity._links[rel].href
 				});
 			} else {
+				console.log(arrayItem, " = arrayItem");
+				console.log(rel, " = rel");
+				console.log ( response , "response ");
+				console.log (  response.entity._links[rel].href , " response.entity._links[rel].href ");
 				return api({
 					method: 'GET',
 					path: response.entity._links[rel].href,
