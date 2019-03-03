@@ -34888,10 +34888,10 @@ function (_React$Component) {
   }, {
     key: "render",
     value: function render() {
-      return React.createElement("div", null, "try2", React.createElement(CreateDialog, {
+      return React.createElement("div", null, React.createElement("h1", null), React.createElement(CreateDialog, {
         attributes: this.state.attributes,
         onCreate: this.onCreate
-      }), React.createElement("h2", null, "VVV"), React.createElement(SocialEventList, {
+      }), React.createElement("h2", null, "VVV - try2"), React.createElement(SocialEventList, {
         socialEvents: this.state.socialEvents,
         links: this.state.links,
         pageSize: this.state.pageSize,

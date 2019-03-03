@@ -156,9 +156,9 @@ class App extends React.Component {
 	render() {
 		return (
 			<div>
-			<h1>try2</h1>
+			<h1></h1>
 				<CreateDialog attributes={this.state.attributes} onCreate={this.onCreate}/>
-				<h2>VVV</h2>
+				<h2>VVV - try2</h2> 
 				<SocialEventList socialEvents={this.state.socialEvents}
 							  links={this.state.links}
 							  pageSize={this.state.pageSize}
