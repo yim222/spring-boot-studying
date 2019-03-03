@@ -81,7 +81,7 @@
 /******/
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = "./src/main/js/app.js");
+/******/ 	return __webpack_require__(__webpack_require__.s = "./src/main/resources/static/js/app.js");
 /******/ })
 /************************************************************************/
 /******/ ({
@@ -34587,10 +34587,10 @@ var __WEBPACK_AMD_DEFINE_RESULT__;/** @license MIT License (c) copyright 2010-20
 
 /***/ }),
 
-/***/ "./src/main/js/api/uriListConverter.js":
-/*!*********************************************!*\
-  !*** ./src/main/js/api/uriListConverter.js ***!
-  \*********************************************/
+/***/ "./src/main/resources/static/js/api/uriListConverter.js":
+/*!**************************************************************!*\
+  !*** ./src/main/resources/static/js/api/uriListConverter.js ***!
+  \**************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -34623,10 +34623,10 @@ var __WEBPACK_AMD_DEFINE_RESULT__;!(__WEBPACK_AMD_DEFINE_RESULT__ = (function ()
 
 /***/ }),
 
-/***/ "./src/main/js/api/uriTemplateInterceptor.js":
-/*!***************************************************!*\
-  !*** ./src/main/js/api/uriTemplateInterceptor.js ***!
-  \***************************************************/
+/***/ "./src/main/resources/static/js/api/uriTemplateInterceptor.js":
+/*!********************************************************************!*\
+  !*** ./src/main/resources/static/js/api/uriTemplateInterceptor.js ***!
+  \********************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -34653,17 +34653,17 @@ var __WEBPACK_AMD_DEFINE_RESULT__;!(__WEBPACK_AMD_DEFINE_RESULT__ = (function (r
 
 /***/ }),
 
-/***/ "./src/main/js/app.js":
-/*!****************************!*\
-  !*** ./src/main/js/app.js ***!
-  \****************************/
+/***/ "./src/main/resources/static/js/app.js":
+/*!*********************************************!*\
+  !*** ./src/main/resources/static/js/app.js ***!
+  \*********************************************/
 /*! no exports provided */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _app_routing_AppRouter__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./app/routing/AppRouter */ "./src/main/js/app/routing/AppRouter.js");
-/* harmony import */ var _app_views_MainMenu__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./app/views/MainMenu */ "./src/main/js/app/views/MainMenu.js");
+/* harmony import */ var _app_routing_AppRouter__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./app/routing/AppRouter */ "./src/main/resources/static/js/app/routing/AppRouter.js");
+/* harmony import */ var _app_views_MainMenu__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./app/views/MainMenu */ "./src/main/resources/static/js/app/views/MainMenu.js");
 /* harmony import */ var react_router_dom__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! react-router-dom */ "./node_modules/react-router-dom/es/index.js");
 
 
@@ -34697,9 +34697,9 @@ var ReactDOM = __webpack_require__(/*! react-dom */ "./node_modules/react-dom/in
 
 var when = __webpack_require__(/*! when */ "./node_modules/when/when.js");
 
-var client = __webpack_require__(/*! ./client */ "./src/main/js/client.js");
+var client = __webpack_require__(/*! ./client */ "./src/main/resources/static/js/client.js");
 
-var follow = __webpack_require__(/*! ./follow */ "./src/main/js/follow.js"); // function to hop multiple links by "rel"
+var follow = __webpack_require__(/*! ./follow */ "./src/main/resources/static/js/follow.js"); // function to hop multiple links by "rel"
 
 
 var root = '/api';
@@ -34891,7 +34891,7 @@ function (_React$Component) {
       return React.createElement("div", null, React.createElement(CreateDialog, {
         attributes: this.state.attributes,
         onCreate: this.onCreate
-      }), React.createElement("h2", null, "VVV"), React.createElement(SocialEventList, {
+      }), React.createElement("h2", null, "VVVAAA"), React.createElement(SocialEventList, {
         socialEvents: this.state.socialEvents,
         links: this.state.links,
         pageSize: this.state.pageSize,
@@ -35199,10 +35199,10 @@ ReactDOM.render(React.createElement(App, null), document.getElementById('react')
 
 /***/ }),
 
-/***/ "./src/main/js/app/routing/AppRouter.js":
-/*!**********************************************!*\
-  !*** ./src/main/js/app/routing/AppRouter.js ***!
-  \**********************************************/
+/***/ "./src/main/resources/static/js/app/routing/AppRouter.js":
+/*!***************************************************************!*\
+  !*** ./src/main/resources/static/js/app/routing/AppRouter.js ***!
+  \***************************************************************/
 /*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -35211,7 +35211,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var react_router_dom__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react-router-dom */ "./node_modules/react-router-dom/es/index.js");
-/* harmony import */ var _screens_Screen1__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../screens/Screen1 */ "./src/main/js/app/screens/Screen1.js");
+/* harmony import */ var _screens_Screen1__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../screens/Screen1 */ "./src/main/resources/static/js/app/screens/Screen1.js");
 
 
 
@@ -35227,10 +35227,10 @@ var MainRouter = function MainRouter() {
 
 /***/ }),
 
-/***/ "./src/main/js/app/screens/Screen1.js":
-/*!********************************************!*\
-  !*** ./src/main/js/app/screens/Screen1.js ***!
-  \********************************************/
+/***/ "./src/main/resources/static/js/app/screens/Screen1.js":
+/*!*************************************************************!*\
+  !*** ./src/main/resources/static/js/app/screens/Screen1.js ***!
+  \*************************************************************/
 /*! exports provided: Screen1 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -35281,10 +35281,10 @@ function (_React$Component) {
 
 /***/ }),
 
-/***/ "./src/main/js/app/views/MainMenu.js":
-/*!*******************************************!*\
-  !*** ./src/main/js/app/views/MainMenu.js ***!
-  \*******************************************/
+/***/ "./src/main/resources/static/js/app/views/MainMenu.js":
+/*!************************************************************!*\
+  !*** ./src/main/resources/static/js/app/views/MainMenu.js ***!
+  \************************************************************/
 /*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -35311,10 +35311,10 @@ var MainMenu = function MainMenu() {
 
 /***/ }),
 
-/***/ "./src/main/js/client.js":
-/*!*******************************!*\
-  !*** ./src/main/js/client.js ***!
-  \*******************************/
+/***/ "./src/main/resources/static/js/client.js":
+/*!************************************************!*\
+  !*** ./src/main/resources/static/js/client.js ***!
+  \************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -35327,14 +35327,14 @@ var defaultRequest = __webpack_require__(/*! rest/interceptor/defaultRequest */ 
 
 var mime = __webpack_require__(/*! rest/interceptor/mime */ "./node_modules/rest/interceptor/mime.js");
 
-var uriTemplateInterceptor = __webpack_require__(/*! ./api/uriTemplateInterceptor */ "./src/main/js/api/uriTemplateInterceptor.js");
+var uriTemplateInterceptor = __webpack_require__(/*! ./api/uriTemplateInterceptor */ "./src/main/resources/static/js/api/uriTemplateInterceptor.js");
 
 var errorCode = __webpack_require__(/*! rest/interceptor/errorCode */ "./node_modules/rest/interceptor/errorCode.js");
 
 var baseRegistry = __webpack_require__(/*! rest/mime/registry */ "./node_modules/rest/mime/registry.js");
 
 var registry = baseRegistry.child();
-registry.register('text/uri-list', __webpack_require__(/*! ./api/uriListConverter */ "./src/main/js/api/uriListConverter.js"));
+registry.register('text/uri-list', __webpack_require__(/*! ./api/uriListConverter */ "./src/main/resources/static/js/api/uriListConverter.js"));
 registry.register('application/hal+json', __webpack_require__(/*! rest/mime/type/application/hal */ "./node_modules/rest/mime/type/application/hal.js"));
 module.exports = rest.wrap(mime, {
   registry: registry
@@ -35346,10 +35346,10 @@ module.exports = rest.wrap(mime, {
 
 /***/ }),
 
-/***/ "./src/main/js/follow.js":
-/*!*******************************!*\
-  !*** ./src/main/js/follow.js ***!
-  \*******************************/
+/***/ "./src/main/resources/static/js/follow.js":
+/*!************************************************!*\
+  !*** ./src/main/resources/static/js/follow.js ***!
+  \************************************************/
 /*! no static exports found */
 /***/ (function(module, exports) {
 
