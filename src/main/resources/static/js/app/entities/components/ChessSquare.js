@@ -30,7 +30,7 @@ export class ChessSquare extends React.Component{
       });
     });
     */
-	  this.loadFromServer(this.state.pageSize);
+	  this.loadFromServer(5);
 	}
 //tag::follow-2[]
 	loadFromServer(pageSize) {
