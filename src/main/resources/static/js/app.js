@@ -157,7 +157,7 @@ class App extends React.Component {
 		return (
 			<div>
 				<CreateDialog attributes={this.state.attributes} onCreate={this.onCreate}/>
-				<h2>VVVAAA</h2>
+				<h2>VVVAAABBBCCC</h2>
 				<SocialEventList socialEvents={this.state.socialEvents}
 							  links={this.state.links}
 							  pageSize={this.state.pageSize}
