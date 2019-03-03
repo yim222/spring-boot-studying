@@ -34888,7 +34888,7 @@ function (_React$Component) {
   }, {
     key: "render",
     value: function render() {
-      return React.createElement("div", null, "more changes...and more ? and fdsf", React.createElement(CreateDialog, {
+      return React.createElement("div", null, "try2", React.createElement(CreateDialog, {
         attributes: this.state.attributes,
         onCreate: this.onCreate
       }), React.createElement("h2", null, "VVV"), React.createElement(SocialEventList, {

@@ -156,7 +156,7 @@ class App extends React.Component {
 	render() {
 		return (
 			<div>
-			more changes...and more ? and fdsf
+			<h1>try2</h1>
 				<CreateDialog attributes={this.state.attributes} onCreate={this.onCreate}/>
 				<h2>VVV</h2>
 				<SocialEventList socialEvents={this.state.socialEvents}
