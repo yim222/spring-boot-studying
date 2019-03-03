@@ -25,7 +25,7 @@ export class ChessSquare extends React.Component{
       this.setState({
         chessSquare2s: "entityResponses222",
         attributes: Object.keys(this.schema.properties),
-        pageSize: 2,
+        pageSize: 2, 
         links: this.links
       });
     });
@@ -79,12 +79,18 @@ export class ChessSquare extends React.Component{
     .then(function(response) {
       console.log('response: ', response);
     });
+    
+    const chessSquaresArray = this.state.chessSquare2s.map(chessSquare =>
+	
+    			<h1>chessSquare.entity.tool</h1>
+    
+    );
     return (
       <div>
       	<h1>Try1</h1>
         <h3>I am ChessSquare</h3>
         <h3>ChessSquares Arrays </h3>
-        <h4>{this.state.chessSquare2s}</h4>
+        <h4>{chessSquaresArray}</h4>
       </div>
     )
   }

@@ -34891,7 +34891,7 @@ function (_React$Component) {
       return React.createElement("div", null, React.createElement("h1", null), React.createElement(CreateDialog, {
         attributes: this.state.attributes,
         onCreate: this.onCreate
-      }), React.createElement("h2", null, "VVV - try4"), React.createElement(SocialEventList, {
+      }), React.createElement("h2", null, "VVV - try_5"), React.createElement(SocialEventList, {
         socialEvents: this.state.socialEvents,
         links: this.state.links,
         pageSize: this.state.pageSize,
@@ -35269,7 +35269,7 @@ function (_React$Component) {
          this.setState({
            chessSquare2s: "entityResponses222",
            attributes: Object.keys(this.schema.properties),
-           pageSize: 2,
+           pageSize: 2, 
            links: this.links
          });
        });
@@ -35331,7 +35331,10 @@ function (_React$Component) {
       rest('http://localhost:8080/api/socialEvents/').then(function (response) {
         console.log('response: ', response);
       });
-      return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h1", null, "Try1"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h3", null, "I am ChessSquare"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h3", null, "ChessSquares Arrays "), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h4", null, this.state.chessSquare2s));
+      var chessSquaresArray = this.state.chessSquare2s.map(function (chessSquare) {
+        return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h1", null, "chessSquare.entity.tool");
+      });
+      return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h1", null, "Try1"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h3", null, "I am ChessSquare"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h3", null, "ChessSquares Arrays "), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h4", null, chessSquaresArray));
     }
   }]);
 
