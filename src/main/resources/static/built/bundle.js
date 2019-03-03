@@ -35213,6 +35213,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var _client__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../../client */ "./src/main/resources/static/js/client.js");
 /* harmony import */ var _client__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_client__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var _follow__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../../follow */ "./src/main/resources/static/js/follow.js");
+/* harmony import */ var _follow__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_follow__WEBPACK_IMPORTED_MODULE_2__);
 function _typeof(obj) { if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
 
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
@@ -35232,6 +35234,7 @@ function _inherits(subClass, superClass) { if (typeof superClass !== "function" 
 function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || function _setPrototypeOf(o, p) { o.__proto__ = p; return o; }; return _setPrototypeOf(o, p); }
 
  //import {loadFromServer} from '../services/GetData'
+
 
 
 var ChessSquare =
@@ -35275,7 +35278,7 @@ function (_React$Component) {
     value: function loadFromServer(pageSize) {
       var _this2 = this;
 
-      follow(_client__WEBPACK_IMPORTED_MODULE_1___default.a, root, [{
+      _follow__WEBPACK_IMPORTED_MODULE_2___default()(_client__WEBPACK_IMPORTED_MODULE_1___default.a, root, [{
         rel: 'chessSquare2s',
         params: {
           size: pageSize

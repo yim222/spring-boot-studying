@@ -1,6 +1,7 @@
 import React from 'react'
 //import {loadFromServer} from '../services/GetData'
 import client from '../../../client'
+import follow from '../../../follow'
 
 export class ChessSquare extends React.Component{
 
