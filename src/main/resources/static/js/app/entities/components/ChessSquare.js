@@ -83,7 +83,7 @@ export class ChessSquare extends React.Component{
     
     const chessSquaresArray = this.state.chessSquare2s.map(chessSquare =>
 	
-    			<h1>chessSquare.entity.tool</h1>
+    			<h1>{chessSquare.entity.tool}</h1>
     
     );
     return (
