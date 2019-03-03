@@ -34891,7 +34891,7 @@ function (_React$Component) {
       return React.createElement("div", null, React.createElement(CreateDialog, {
         attributes: this.state.attributes,
         onCreate: this.onCreate
-      }), React.createElement("h2", null, "VVVAAABBBCCC"), React.createElement(SocialEventList, {
+      }), React.createElement("h2", null, "VVVAAABBBCCCdddd"), React.createElement(SocialEventList, {
         socialEvents: this.state.socialEvents,
         links: this.state.links,
         pageSize: this.state.pageSize,
