@@ -149,7 +149,7 @@ class App extends React.Component {
 
 	// tag::follow-1[]
 	componentDidMount() {
-		this.loadFromServer(this.state.pageSize);
+		this.loadFromServer(this.state.pageSize); 
 	}
 	// end::follow-1[]
 
