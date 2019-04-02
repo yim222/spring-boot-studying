@@ -34888,10 +34888,10 @@ function (_React$Component) {
   }, {
     key: "render",
     value: function render() {
-      return React.createElement("div", null, React.createElement("h1", null), React.createElement(CreateDialog, {
+      return React.createElement("div", null, React.createElement("h1", null, "Check"), React.createElement(CreateDialog, {
         attributes: this.state.attributes,
         onCreate: this.onCreate
-      }), React.createElement("h2", null, "VVV - try_8 "), React.createElement(SocialEventList, {
+      }), React.createElement("h2", null, "VVV - try_832 "), React.createElement(SocialEventList, {
         socialEvents: this.state.socialEvents,
         links: this.state.links,
         pageSize: this.state.pageSize,
@@ -35149,7 +35149,7 @@ function (_React$Component4) {
         ref: "pageSize",
         defaultValue: this.props.pageSize,
         onInput: this.handleInput
-      }), React.createElement("table", null, React.createElement("tbody", null, React.createElement("tr", null, React.createElement("th", null, "First Name"), React.createElement("th", null, "Last Name"), React.createElement("th", null, "Description"), React.createElement("th", null), React.createElement("th", null)), socialEvents)), React.createElement("div", null, navLinks));
+      }), React.createElement("table", null, React.createElement("tbody", null, React.createElement("tr", null, React.createElement("th", null, "First Name"), React.createElement("th", null, "Last Name"), React.createElement("th", null, "Description"), React.createElement("th", null, "More Value"), React.createElement("th", null), React.createElement("th", null)), socialEvents)), React.createElement("div", null, navLinks));
     } // end::socialEvent-list-render[]
 
   }]);
@@ -35181,7 +35181,7 @@ function (_React$Component5) {
   }, {
     key: "render",
     value: function render() {
-      return React.createElement("tr", null, React.createElement("td", null, this.props.socialEvent.entity.description), React.createElement("td", null, this.props.socialEvent.entity.toAge), React.createElement("td", null, this.props.socialEvent.entity.fromAge), React.createElement("td", null, React.createElement(UpdateDialog, {
+      return React.createElement("tr", null, React.createElement("td", null, this.props.socialEvent.entity.description), React.createElement("td", null, this.props.socialEvent.entity.toAge), React.createElement("td", null, this.props.socialEvent.entity.fromAge), React.createElement("td", null, this.props.socialEvent.entity.moreValue), React.createElement("td", null, React.createElement(UpdateDialog, {
         socialEvent: this.props.socialEvent,
         attributes: this.props.attributes,
         onUpdate: this.props.onUpdate

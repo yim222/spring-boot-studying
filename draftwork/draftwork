@@ -17,3 +17,8 @@ add :
 		</dependency>
 		
 		try later with both 
+		
+		
+		UPDATE `table_name` SET `column_name` = `new_value' [WHERE condition];
+		
+		update social_event set from_age = 22 WHERE description = "Lesson";

@@ -33,4 +33,28 @@ mysqladmin shutdown
 
 --------------------------------------------------------
 
+To start the spring server : run the main class and open localhost8080
 
+U need to pass over that in general : 
+
+https://docs.spring.io/spring-javaconfig/docs/1.0.0.M4/
+
+
+Maybe here it more on the order : 
+
+https://docs.spring.io/spring-javaconfig/docs/1.0.0.M4/reference/html/index.html
+
+
+- Seem that in any important at the configuration (of how it's run for example) U need to do "clean install " 
+Yeah not just that . For me I see that any changes not happen until I do the clean-install. It's recompile. It's like the spring 
+is running something that compiled and don't show the changes until it's recomplie. 
+
+
+u here - 
+Ok little played around with the Bean. Yet not know the use case of that. But continue at the next time after that : 
+
+https://docs.spring.io/spring-javaconfig/docs/1.0.0.M4/reference/html/pr01.html
+
+---------------Exercises and taregt suggestions : ---------------------------------
+
+- Do a structure that automatically get all the dependencies (learn from the structure of socialEvent

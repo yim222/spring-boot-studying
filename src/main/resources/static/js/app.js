@@ -156,9 +156,9 @@ class App extends React.Component {
 	render() {
 		return (
 			<div>
-			<h1></h1>
+			<h1>Check</h1>
 				<CreateDialog attributes={this.state.attributes} onCreate={this.onCreate}/>
-				<h2>VVV - try_8 </h2> 
+				<h2>VVV - try_832 </h2> 
 				<SocialEventList socialEvents={this.state.socialEvents}
 							  links={this.state.links}
 							  pageSize={this.state.pageSize}
@@ -358,6 +358,7 @@ class SocialEventList extends React.Component {
 							<th>First Name</th>
 							<th>Last Name</th>
 							<th>Description</th>
+							<th>More Value</th>
 							<th></th>
 							<th></th>
 						</tr>
@@ -391,6 +392,7 @@ class SocialEvent extends React.Component {
 				<td>{this.props.socialEvent.entity.description}</td>
 				<td>{this.props.socialEvent.entity.toAge}</td>
 				<td>{this.props.socialEvent.entity.fromAge}</td>
+				<td>{this.props.socialEvent.entity.moreValue}</td>
 
 				<td>
 					<UpdateDialog socialEvent={this.props.socialEvent}

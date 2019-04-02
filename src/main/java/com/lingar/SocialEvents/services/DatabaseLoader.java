@@ -35,9 +35,9 @@ public class DatabaseLoader implements CommandLineRunner {
 		System.out.println("Saving");
 		System.out.println(this.repository.count() + " = how much entities inside the table. ");
 		if (this.repository.count() ==0 ){
-			this.repository.save(new SocialEvent("Crazy Party ", 0, 120));
-			this.repository.save(new SocialEvent("Lesson ", 33, 40));
-			this.repository.save(new SocialEvent("Trip ", 20, 40));
+			this.repository.save(new SocialEvent("Crazy Party ", 0, 120, "a"));
+			this.repository.save(new SocialEvent("Lesson ", 33, 40, "b"));
+			this.repository.save(new SocialEvent("Trip ", 20, 40, "c"));
 		}
 		System.out.println("Clean all chess Square");
 		

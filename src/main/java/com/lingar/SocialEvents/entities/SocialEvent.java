@@ -18,7 +18,7 @@ import lombok.Data;
 public class SocialEvent {
 	
 	private @Id @GeneratedValue Long id;
-	private String description;
+	private String description, moreValue;
 	private int fromAge, toAge;
 	
 	private @Version @JsonIgnore Long version;
@@ -28,18 +28,19 @@ public class SocialEvent {
 	private SocialEvent() {}
 
 
-	public SocialEvent( String description, int fromAge, int toAge) {
+	public SocialEvent( String description, int fromAge, int toAge, String moreValue) {
 		
 		this.description = description;
 		this.fromAge = fromAge;
 		this.toAge = toAge;
+		this.moreValue = moreValue;
 	}
 
 
 	@Override
 	public String toString() {
 		return "SocialEvent [id=" + id + ", description=" + description + ", fromAge=" + fromAge + ", toAge=" + toAge
-				+ ", version=" + version + "]";
+				+ ", version=" + version + " moreValue = " + moreValue +"]";
 	}
 	
 	
