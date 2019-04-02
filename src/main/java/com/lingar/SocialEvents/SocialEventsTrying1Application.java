@@ -8,6 +8,7 @@ public class SocialEventsTrying1Application {
 
 	public static void main(String[] args) {
 		SpringApplication.run(SocialEventsTrying1Application.class, args);
+		System.out.println("new words");
 	}
 
 }

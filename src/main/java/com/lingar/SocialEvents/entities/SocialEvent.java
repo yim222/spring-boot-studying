@@ -1,4 +1,7 @@
 package com.lingar.SocialEvents.entities;
+import java.util.List;
+
+import javax.persistence.ElementCollection;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
@@ -20,6 +23,8 @@ public class SocialEvent {
 	private @Id @GeneratedValue Long id;
 	private String description, moreValue;
 	private int fromAge, toAge;
+	@ElementCollection
+	private List<String> myArray; 
 	
 	private @Version @JsonIgnore Long version;
 
@@ -28,12 +33,13 @@ public class SocialEvent {
 	private SocialEvent() {}
 
 
-	public SocialEvent( String description, int fromAge, int toAge, String moreValue) {
+	public SocialEvent( String description, int fromAge, int toAge, String moreValue, List<String> myArray) {
 		
 		this.description = description;
 		this.fromAge = fromAge;
 		this.toAge = toAge;
 		this.moreValue = moreValue;
+		this.myArray = myArray; 
 	}
 
 

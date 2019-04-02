@@ -1,6 +1,8 @@
 package com.lingar.SocialEvents.services;
 
+import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.CommandLineRunner;
@@ -34,10 +36,14 @@ public class DatabaseLoader implements CommandLineRunner {
 	public void run(String... strings) throws Exception {
 		System.out.println("Saving");
 		System.out.println(this.repository.count() + " = how much entities inside the table. ");
+		String[] myArray = {"I", "AM", "LINGAR"};
+		List<String> myArray2 = new ArrayList<String>();
+		myArray2.add("One");myArray2.add("Two");myArray2.add("Three");
+		
 		if (this.repository.count() ==0 ){
-			this.repository.save(new SocialEvent("Crazy Party ", 0, 120, "a"));
-			this.repository.save(new SocialEvent("Lesson ", 33, 40, "b"));
-			this.repository.save(new SocialEvent("Trip ", 20, 40, "c"));
+			this.repository.save(new SocialEvent("Crazy Party ", 0, 120, "a" , myArray2));
+			this.repository.save(new SocialEvent("Lesson ", 33, 40, "b" , myArray2)); 
+			this.repository.save(new SocialEvent("Trip ", 20, 40, "c" , myArray2));
 		}
 		System.out.println("Clean all chess Square");
 		
