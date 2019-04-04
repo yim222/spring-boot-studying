@@ -43,6 +43,7 @@ public class DatabaseLoader implements CommandLineRunner {
 		if (this.repository.count() ==0 ){
 			this.repository.save(new SocialEvent("Crazy Party ", 0, 120, "a" , myArray2));
 			this.repository.save(new SocialEvent("Lesson ", 33, 40, "b" , myArray2)); 
+			myArray2.add("Happy");
 			this.repository.save(new SocialEvent("Trip ", 20, 40, "c" , myArray2));
 		}
 		System.out.println("Clean all chess Square");

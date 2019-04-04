@@ -1,0 +1,27 @@
+{
+	
+  "toAge": 22,
+  "fromAge": 14,
+  "description": "Blanfo",
+  "myArray": ["a","BO", "Thrreadad"],
+  "moreValue":"kkkk"
+  
+ }
+ 
+ {
+	
+  toAge: 22,
+  fromAge: 14,
+  description: "Blanfo",
+  myArray: ["a","BO", "Thrreadad"],
+  moreValue:"kkkk"
+  
+ }
+ 
+ U NEED TO PASS ALL IN ONE LINE///
+ Use in that , that's is good : 
+ https://www.freeformatter.com/json-formatter.html#ad-output
+ 
+ 
+ {  "toAge": 22,  "fromAge": 14,  "description": "Blanfo",  "myArray": ["a","BO", "Thrreadad"],  "moreValue":"kkkk" }
+ 
