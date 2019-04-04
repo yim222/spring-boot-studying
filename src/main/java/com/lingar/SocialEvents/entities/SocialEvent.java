@@ -7,7 +7,7 @@ import javax.persistence.ElementCollection;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
-import javax.persistence.ManyToOne;
+import javax.persistence.OneToOne;
 import javax.persistence.Version;
 
 import com.fasterxml.jackson.annotation.JsonIgnore;
@@ -29,16 +29,28 @@ public class SocialEvent {
 	//@ElementCollection(targetClass=EventProperty.class)
 	
 	//@OneToOne(cascade=CascadeType.ALL)
-	@ManyToOne(cascade=CascadeType.ALL)
-	private EventProperty eventProperty = new EventProperty("something");
+	//@ManyToOne(cascade=CascadeType.ALL)
+	//private EventProperty eventProperty = new EventProperty("something");
 	@ElementCollection
 	private List<String> myArray; 
+	
+	@OneToOne(cascade=CascadeType.ALL)
+	private EventProperties eventProps;
 	
 	private @Version @JsonIgnore Long version;
 
 	
 
 	private SocialEvent() {}
+	
+	public SocialEvent(String description, String moreValue, int fromAge, int toAge, EventProperties eventProps) {
+		super();
+		this.description = description;
+		this.moreValue = moreValue;
+		this.fromAge = fromAge;
+		this.toAge = toAge;
+		this.eventProps = eventProps;
+	}
 
 
 	public SocialEvent( String description, int fromAge, int toAge, String moreValue, List<String> myArray) {

@@ -22,3 +22,22 @@ add :
 		UPDATE `table_name` SET `column_name` = `new_value' [WHERE condition];
 		
 		update social_event set from_age = 22 WHERE description = "Lesson";
+		
+		
+		org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in 
+		class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaConfiguration.class]: 
+		Invocation of init method failed; nested exception is javax.persistence.PersistenceException: 
+		[PersistenceUnit: default] Unable to build Hibernate SessionFactory; nested exception is org.hibernate.MappingException:
+		 Could not determine type for: com.lingar.SocialEvents.entities.EventProperty, at table: event_properties_data, for columns: 
+		 [org.hibernate.mapping.Column(data)]
+		 
+		 
+		 
+		 
+		 property mapping has wrong number of columns: com.lingar.SocialEvents.entities.EventPropertySingleValue.value type: object
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1762) ~[spring-beans-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+		
+		
+		
+		
+		property mapping has wrong number of columns:  type: object

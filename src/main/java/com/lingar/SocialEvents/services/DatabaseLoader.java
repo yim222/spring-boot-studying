@@ -10,6 +10,8 @@ import org.springframework.stereotype.Component;
 
 import com.lingar.SocialEvents.entities.ChessSquare;
 import com.lingar.SocialEvents.entities.ChessSquare2;
+import com.lingar.SocialEvents.entities.EventProperties;
+import com.lingar.SocialEvents.entities.EventPropertiesGenerator;
 import com.lingar.SocialEvents.entities.SocialEvent;
 import com.lingar.SocialEvents.entities.Try1;
 
@@ -41,7 +43,10 @@ public class DatabaseLoader implements CommandLineRunner {
 		myArray2.add("One");myArray2.add("Two");myArray2.add("Three");
 		
 		if (this.repository.count() ==0 ){
-			this.repository.save(new SocialEvent("Crazy Party ", 0, 120, "a" , myArray2));
+			//this.repository.save(new SocialEvent("Crazy Party ", 0, 120, "a" , myArray2));
+			EventProperties evProps = new EventProperties(EventPropertiesGenerator.generateList());
+			this.repository.save(new SocialEvent("New party " , "amm", 5, 22, evProps));
+			
 			this.repository.save(new SocialEvent("Lesson ", 33, 40, "b" , myArray2)); 
 			myArray2.add("Happy");
 			this.repository.save(new SocialEvent("Trip ", 20, 40, "c" , myArray2));
