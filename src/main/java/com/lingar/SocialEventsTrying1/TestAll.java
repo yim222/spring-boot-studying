@@ -48,7 +48,7 @@ public class TestAll {
 		System.out.println(e3);
 		
         
-        EventPropertySingleValue e4 = new EventPropertySingleValue("isOrganizer", false);
+        EventPropertySingleValue e4 = new EventPropertySingleValue("isOrganizer", "false");
 		System.out.println(e4);
         
 		System.out.println("Test EventPropsGenerator");
@@ -69,7 +69,7 @@ public class TestAll {
 		
 		e6 = new SocialEvent("b", "xzc", 44, 55, e5);
 		allEvents.add(e6);
-		e3 = new EventPropertySingleValue("isPublisher", false);
+		e3 = new EventPropertySingleValue("isPublisher", "false");
 		e5.updateData(e3);
 		e6 = new SocialEvent("C", "ZZZ", 44, 55, e5);
 		allEvents.add(e6);

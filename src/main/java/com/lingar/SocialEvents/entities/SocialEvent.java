@@ -5,6 +5,7 @@ import java.util.List;
 import javax.persistence.CascadeType;
 import javax.persistence.ElementCollection;
 import javax.persistence.Entity;
+import javax.persistence.FetchType;
 import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
 import javax.persistence.OneToOne;
@@ -23,7 +24,7 @@ import lombok.Data;
 @Entity ///@Entity(name = "sss")
 public class SocialEvent {
 	
-	private @Id @GeneratedValue Long id;
+	private @Id @GeneratedValue Long socialEventId;
 	private String description, moreValue;
 	private int fromAge, toAge;
 	//@ElementCollection(targetClass=EventProperty.class)
@@ -31,7 +32,7 @@ public class SocialEvent {
 	//@OneToOne(cascade=CascadeType.ALL)
 	//@ManyToOne(cascade=CascadeType.ALL)
 	//private EventProperty eventProperty = new EventProperty("something");
-	@ElementCollection
+	@ElementCollection(fetch = FetchType.EAGER)
 	private List<String> myArray; 
 	
 	@OneToOne(cascade=CascadeType.ALL)
@@ -80,8 +81,9 @@ public class SocialEvent {
 
 	@Override
 	public String toString() {
-		return "SocialEvent [id=" + id + ", description=" + description + ", fromAge=" + fromAge + ", toAge=" + toAge
-				+ ", version=" + version + " moreValue = " + moreValue +"]";
+		return "SocialEvent [socialEventId=" + socialEventId + ", description=" + description + ", moreValue="
+				+ moreValue + ", fromAge=" + fromAge + ", toAge=" + toAge + ", myArray=" + myArray + ", eventProps="
+				+ eventProps + ", version=" + version + "]";
 	}
 	
 	

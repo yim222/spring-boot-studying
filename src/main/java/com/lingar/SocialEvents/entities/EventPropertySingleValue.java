@@ -1,19 +1,18 @@
 package com.lingar.SocialEvents.entities;
 
-import javax.persistence.CascadeType;
-import javax.persistence.ElementCollection;
+import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
-import javax.persistence.OneToOne;
 
 import lombok.Data;
 
 @Data
 @Entity
 public class EventPropertySingleValue extends EventProperty {
-	private @Id @GeneratedValue Long id;
+	//private @Id @GeneratedValue Long id2;
 	//@OneToOne(cascade=CascadeType.ALL)
+	@Column(name = "prop_value")
 	String value;
 	
 	
@@ -27,12 +26,9 @@ public class EventPropertySingleValue extends EventProperty {
 		// TODO Auto-generated constructor stub
 	}
 
-	public EventPropertySingleValue(Object value) {
-		super();
-		this.value = value;
-	}
 	
-	public EventPropertySingleValue(String name, Object value) {
+	
+	public EventPropertySingleValue(String name, String value) {
 		super(name);
 		this.value = value;
 	}
@@ -42,7 +38,7 @@ public class EventPropertySingleValue extends EventProperty {
 		return value;
 	}
 
-	public void setValue(Object value) {
+	public void setValue(String value) {
 		this.value = value;
 	}
 

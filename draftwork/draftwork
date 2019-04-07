@@ -41,3 +41,17 @@ add :
 		
 		
 		property mapping has wrong number of columns:  type: object
+		
+		
+		
+		create table  ( bigint not null, values varchar(255)) engine=MyISAM" via JDBC Statement
+		
+		
+		
+		Use of @OneToMany or @ManyToMany targeting an unmapped class: com.lingar.SocialEvents.entities.EventProperties.data[com.lingar.SocialEvents.entities.EventProperty]
+		Could not determine type for: java.util.Map, at table: event_properties, for columns: [org.hibernate.mapping.Column(data)]
+	at org.springframework.beans.factory.suppo
+	
+	
+	references an unknown entity: java.util.Map
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1762) ~[spring-beans-5.1.5.RELEASE.jar:5.1.5.RELEASE]

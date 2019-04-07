@@ -41,15 +41,17 @@ public class DatabaseLoader implements CommandLineRunner {
 		String[] myArray = {"I", "AM", "LINGAR"};
 		List<String> myArray2 = new ArrayList<String>();
 		myArray2.add("One");myArray2.add("Two");myArray2.add("Three");
-		
+		System.out.println("checks ... the general area of dataLoader .  ");
 		if (this.repository.count() ==0 ){
 			//this.repository.save(new SocialEvent("Crazy Party ", 0, 120, "a" , myArray2));
+			System.out.println("checks ... the assignment ");
 			EventProperties evProps = new EventProperties(EventPropertiesGenerator.generateList());
-			this.repository.save(new SocialEvent("New party " , "amm", 5, 22, evProps));
+			this.repository.save(new SocialEvent("New party " , "amm", 5, 22,  new EventProperties(EventPropertiesGenerator.generateList())));
+			this.repository.save(new SocialEvent("New party " , "amm2", 44, 22,  new EventProperties(EventPropertiesGenerator.generateList())));
 			
-			this.repository.save(new SocialEvent("Lesson ", 33, 40, "b" , myArray2)); 
-			myArray2.add("Happy");
-			this.repository.save(new SocialEvent("Trip ", 20, 40, "c" , myArray2));
+			//this.repository.save(new SocialEvent("Lesson ", 33, 40, "b" , myArray2)); 
+			//myArray2.add("Happy");
+			//this.repository.save(new SocialEvent("Trip ", 20, 40, "c" , myArray2));
 		}
 		System.out.println("Clean all chess Square");
 		

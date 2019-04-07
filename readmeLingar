@@ -11,7 +11,7 @@ OPEN MYSQL :
 --Other 
 >CMD
 >™
-mysql mysql -u lingar222 –p
+> mysql -u lingar222 –p
 >mysql -u root –p  OR mysql -u lingar222 –p
 --password:
 >12345678

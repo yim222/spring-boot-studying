@@ -4,6 +4,7 @@ package com.lingar.SocialEvents.entities;
  */
 import java.util.List;
 
+import javax.persistence.Column;
 import javax.persistence.ElementCollection;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
@@ -11,12 +12,13 @@ import javax.persistence.Id;
 
 import lombok.Data;
 @Data
-@Entity
+@Entity 
 public class EventPropertyMutiValues extends EventProperty {
-	private @Id @GeneratedValue Long id;
-	String value = "I am property";
+	//private @Id @GeneratedValue Long id3;
+	
 	@ElementCollection
-	List<Object>  values;
+	@Column(name = "prop_values")
+	List<String>  values;
 	public EventPropertyMutiValues(String name) {
 		super(name);
 		// TODO Auto-generated constructor stub
@@ -30,25 +32,19 @@ public class EventPropertyMutiValues extends EventProperty {
 	
 	
 
-	public String getValue() {
-		return value;
-	}
+	
 
-	public void setValue(String value) {
-		this.value = value;
-	}
-
-	public List<Object> getValues() {
+	public List<String> getValues() {
 		return values;
 	}
 
-	public void setValues(List<Object> values) {
+	public void setValues(List<String> values) {
 		this.values = values;
 	}
 
 	@Override
 	public String toString() {
-		return "EventPropertyMutiValues [value=" + value + ", values=" + values + ", name=" + name + "]";
+		return "EventPropertyMutiValues [, values=" + values + ", name=" + name + "]";
 	}
 
 	

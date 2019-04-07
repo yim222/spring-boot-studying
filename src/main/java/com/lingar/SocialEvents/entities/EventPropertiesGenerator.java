@@ -23,12 +23,12 @@ public class EventPropertiesGenerator {
 				);
 		ev = new EventPropertySingleValue("name", "na");
 		allEvsProps.add(ev);
-		ev = new EventPropertySingleValue("isOrganizer", true);
+		ev = new EventPropertySingleValue("isOrganizer", Boolean.TRUE.toString());
 		allEvsProps.add(ev);
 		ev = new EventPropertySingleValue("publisherName", "Avraham");
 		allEvsProps.add(ev);
 		
-		ev = new EventPropertySingleValue("date", new Date());
+		ev = new EventPropertySingleValue("date", new Date().toString());
 		allEvsProps.add(ev);
 		
 		ev = new EventPropertyMutiValues("eventType", list2);
