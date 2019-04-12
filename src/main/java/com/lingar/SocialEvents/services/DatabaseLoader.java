@@ -36,6 +36,11 @@ public class DatabaseLoader implements CommandLineRunner {
 	//Then Do with that saving. 
 	@Override
 	public void run(String... strings) throws Exception {
+		System.out.println("Old - loader - return");
+		if(true){
+			return;
+		}
+		
 		System.out.println("Saving");
 		System.out.println(this.repository.count() + " = how much entities inside the table. ");
 		String[] myArray = {"I", "AM", "LINGAR"};

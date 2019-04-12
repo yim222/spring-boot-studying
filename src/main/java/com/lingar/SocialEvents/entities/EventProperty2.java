@@ -9,7 +9,7 @@ import lombok.Data;
 
 @Data
 @Entity
-public class EventProperty {
+public class EventProperty2 {
 	private @Id @GeneratedValue Long eventPropertyId;
 	
 	
@@ -17,13 +17,22 @@ public class EventProperty {
 	//parent
 	@Column(name = "prop_name")
 	String name;
+	String evPropsVal;
 	
-	public EventProperty(){}
-	public EventProperty(String name) {
+	
+	public EventProperty2(){}
+	public EventProperty2(String name,String evPropsVal ) {
 		
 		this.name = name;
 	}
 
+	public String getName() {
+		return name;
+	}
+
+	public void setName(String name) {
+		this.name = name;
+	} 
 	
 	
 }

@@ -51,6 +51,7 @@ public class SocialEvent {
 		this.fromAge = fromAge;
 		this.toAge = toAge;
 		this.eventProps = eventProps;
+		
 	}
 
 
